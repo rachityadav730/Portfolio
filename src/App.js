@@ -1,10 +1,14 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NavMenu from './components/NavMenu';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Portfolio Cover</h1>
-    </div>
+   <>
+   <Router>
+        <NavMenu />
+    </Router>
+   </>
   );
 }
 
