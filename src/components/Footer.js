@@ -57,7 +57,7 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Ayan Khan</h1>
+          <h1 className="footer__col1__title">Rachit Yadav</h1>
           <PText>
             A freelance web designer and developer from Chittagong, Bangladesh.
             I always make websites that have unique designs and also has a good
@@ -96,15 +96,15 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+88012312',
-                path: 'tel:+88012312',
+                title: '+91 7011819905',
+                path: 'tel:+91 7011819905',
               },
               {
-                title: 'webcifar@gmail.com',
-                path: 'mailto:webcifar@gmail.com',
+                title: 'rachit.r.yadav@gmail.com',
+                path: 'mailto:rachit.r.yadav@gmail.com',
               },
               {
-                title: 'GEC Circle, Chittagong, Bangladesh',
+                title: 'Kanpur,Uttar Pradesh',
                 path: 'http://google.com/maps',
               },
             ]}
@@ -133,7 +133,7 @@ export default function Footer() {
       <div className="copyright">
         <div className="container">
           <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
+            © 2021 - Rachit Yadav | Designed By{' '}
             <a target="_blank" rel="noreferrer" href="http://webcifar.com">
               web cifar
             </a>{' '}
