@@ -8,7 +8,7 @@ import 'swiper/swiper-bundle.min.css';
 import projects from '../assets/data/projects';
 
 // install Swiper modules
-// SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
   padding: 10rem 0;
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            // navigation
+            navigation
             breakpoints={{
               // when window width is >= 640px
               640: {
