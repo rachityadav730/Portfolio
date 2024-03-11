@@ -86,21 +86,7 @@ export default function About() {
               <h2 className="about__heading"> Full stack developer</h2>
               <div className="about__info">
                 <PText>
-                  I am from Kanpur, A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
-                  try to design stuff with my unique point of view. I also love
-                  to create things that can be usefull to others.
-                  <br /> <br />
-                  I started coding since I was in high school. Coding is also an
-                  art for me. I love it and now I have the opportunity to design
-                  along with the coding. I find it really interesting and I
-                  enjoyed the process a lot.
-                  <br />
-                  <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
+                Experienced full-stack developer with a strong background in fintech software, specializing in React and Ruby on Rails. Proficient in Git for version control and adept at deploying scalable systems with optimized code on AWS. Demonstrated success in contributing to the growth of a startup through technical expertise and commitment to building efficient solutions.
                 </PText>
               </div>
               <Button btnText="Download CV" btnLink="#" />
@@ -144,7 +130,7 @@ export default function About() {
 
               <AboutInfoItem
                 title="2022-2024"
-                items={['Software Engineer at web Cifar']}
+                items={['Software Engineer at Setlmint']}
               />
  
             </div>

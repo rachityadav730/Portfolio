@@ -162,56 +162,9 @@ export default function HeroSection() {
           <div className="hero__info">
             <PText>
               I am working as a software engineer for 2.5
-              years. I love to design and make new web experiences for the
-              people.
+              years.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
-          </div>
-          <div className="hero__social">
-            <div className="hero__social__indicator">
-              <p>Follow</p>
-              <img src={SocialMediaArrow} alt="icon" />
-            </div>
-            <div className="hero__social__text">
-              <ul>
-                <li>
-                  <a
-                    href="http://facebook.com/webcifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    FB
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://twitter.com/webcifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://isntagram.com/web_cifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    IG
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://webcifar.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    LI
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="hero__scrollDown">
             <p>Scroll</p>

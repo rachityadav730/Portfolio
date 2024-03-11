@@ -80,8 +80,7 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a full stack developer,
-            I create professional websites. I love art and system security.
+          Over the past two years, I have been employed at a fintech software startup, where I have gained extensive experience in working with React, Ruby on Rails, version control using Git, and deploying scalable systems with optimized code on AWS.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />
