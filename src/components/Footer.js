@@ -96,8 +96,8 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+91 7011819905',
-                path: 'tel:+91 7011819905',
+                title: '+91 7710076809',
+                path: 'tel:+91 7710076809',
               },
               {
                 title: 'rachit.r.yadav@gmail.com',

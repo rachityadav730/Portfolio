@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import emailjs from '@emailjs/browser';
 
 const FormStyle = styled.form`
   width: 100%;
@@ -43,10 +44,44 @@ export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [stateMessage, setStateMessage] = useState(null);
+
+  const sendEmail = (e) => {
+    e.persist();
+    e.preventDefault();
+    setIsSubmitting(true);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+      )
+      .then(
+        (result) => {
+          setStateMessage('Message sent!');
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        },
+        (error) => {
+          setStateMessage('Something went wrong, please try again later');
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        }
+      );
+    // e.target.reset();
+  };
+
   return (
     <>
       <FormStyle>
+      <form onSubmit={sendEmail}>
         <div className="form-group">
+          
           <label htmlFor="name">
             Your Name
             <input
@@ -83,6 +118,7 @@ export default function ContactForm() {
           </label>
         </div>
         <button type="submit">Send</button>
+        </form>
       </FormStyle>
     </>
   );

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import AboutImg from '../assets/images/initial.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
-
+import CV from '../assets/images/Rachit Yadav.pdf';
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
 
@@ -89,7 +89,9 @@ export default function About() {
                 Experienced full-stack developer with a strong background in fintech software, specializing in React and Ruby on Rails. Proficient in Git for version control and adept at deploying scalable systems with optimized code on AWS. Demonstrated success in contributing to the growth of a startup through technical expertise and commitment to building efficient solutions.
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+              <a href= {CV} download="Rachit_Yadav_CV.pdf">
+              <Button btnText="Download CV" />
+              </a>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
